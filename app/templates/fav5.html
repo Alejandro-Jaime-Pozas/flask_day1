@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+List of 5 favorite Artists
+{% endblock title %}
+
+{% block content %}
+
+<div >
+    <br>
+    <h1 class="display-2">My Top 5 artists:</h1>
+    <br>
+    <ul class="lead text-primary">
+        {% for artist in artists %}
+            <br>{{ artist }}
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}
